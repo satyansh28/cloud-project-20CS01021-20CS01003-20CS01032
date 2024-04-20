@@ -18,10 +18,15 @@ For ordering we use timestamps produced by Lamport's logical clock,we have used 
 ## Usage
 
 To run the program with N processes,first you need to compile the c++ code using g++(or clang):
+
 `g++ lamport_exclusion.cpp`
+
 Following which you need to run it in N terminals using the following command(in Linux):
+
 `./a.out`
+
 Following this you will need to enter the port to listen on,the number of other peers in the network and their port numbers.After the above you will have a menu driven program to request critical section.
-NOTE: We have added an 8 seconds delay when a process enter's critical section before it releases the critical section.
+
+NOTE: We have added an 8 seconds delay when a process enters critical section before it releases the critical section.
 
 [Sample image:](https://drive.google.com/file/d/1Ki96f-CroIVWf1Xbu8uP6L2uIZelfMAM/view?usp=sharing)
